@@ -1,0 +1,36 @@
+@import "./colors.scss";
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    background-color: $background;
+    padding: 5vh 5vw;
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.game-cell {
+    height: 24px;
+    width: 24px;
+    box-sizing: border-box;
+    border: 1px solid $border;
+}
+
+.snake-body {
+    background-color: $snake;
+    &.snake-head {
+        border: 2px solid $fruit;
+    }
+}
